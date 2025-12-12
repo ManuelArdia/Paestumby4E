@@ -1,0 +1,181 @@
+/* Font & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+}
+
+/* HERO (copertina) */
+.hero {
+    position: relative;
+    height: 60vh;
+    background: url('../img/scuola.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 125px;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%; width: 100%;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero h1, .hero h2, .hero p, .hero .btn {
+    position: relative;
+    z-index: 10;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #00aaff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.hero .btn:hover {
+    background: #0088cc;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #003366;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* GRID MATERIE */
+#materie {
+    padding: 35px;
+}
+
+.materie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #e8f3ff;
+}
+
+/* FORM */
+.form {
+    background: white;
+    padding: 25px;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.12);
+}
+
+.form input, .form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.form button {
+    background: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #003366;
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+<style>
+/* Stile per l'immagine di Paestum */
+.paestum-img {
+    max-width: 500px;
+    width: 100%;
+    border: 5px solid #0077AA;   /* bordo spesso e colorato */
+    border-radius: 15px;          /* angoli arrotondati */
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);  /* ombra intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paestum-img:hover {
+    transform: scale(1.05);       /* leggero zoom al passaggio del mouse */
+    box-shadow: 0 18px 35px rgba(0,0,0,0.4); /* ombra più pronunciata */
+}
+</style>
+
+

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La Tomba del Tuffatore – Paestum | Liceo Scientifico Scienze Applicate 4E</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #005F8C, #0082B3);
+            padding: 35px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        /* ==================== HERO BAR ==================== */
+        .hero {
+            background: linear-gradient(90deg, #0082B3, #005F8C);
+            padding: 25px 25px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            margin: 25px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .hero-icon {
+            font-size: 2em;
+        }
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #0077AA;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+        }
+
+        nav a:hover {
+            background: #005F8C;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #004D73;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== SEZIONI ==================== */
+        .section-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 3px solid #0077AA;
+            box-shadow: 0 0 12px rgba(0,0,0,.15);
+            text-align: center;
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .section-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px rgba(0,0,0,.25);
+        }
+
+        .section-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            font-family: 'Montserrat', sans-serif;
+            color: #004D73;
+        }
+
+        .section-card p {
+            font-size: 1em;
+            color: #00344d;
+        }
+
+        .section-card a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #0077AA;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background .25s, transform .25s;
+        }
+
+        .section-card a:hover {
+            background: #005F8C;
+            transform: scale(1.08);
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: #004D73;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* ==================== GRIGLIA IMMAGINI 2x2 ==================== */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+            grid-gap: 20px; /* spazio tra le immagini */
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid #0077AA;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>La Tomba del Tuffatore</h1>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">🌊</span>
+     “Un unicum nel mondo greco: il passaggio simbolico dalla vita alla morte” 
+</div>
+
+<!-- ================= STORIA E IMMAGINE================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       La tomba del tuffatore
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="La tomba del tuffatore.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            
+            <p>La Tomba del Tuffatore è l’opera più rappresentativa del Museo archeologico nazionale di Paestum e unica nel suo genere nel panorama greco del V secolo a.C.</p>
+<p>Punti salienti:</p>
+<p>•	Data e scoperta: risale al 480-470 a.C., scoperta nel 1968 nella necropoli di Tempa del Prete, a circa 2 km da Paestum.</p>
+<p>•	Struttura: composta da quattro lastre laterali e una lastra di copertura; il defunto era deposto all’interno insieme al corredo funerario.</p>
+<p>•	Decorazioni: le pareti interne mostrano scene di simposio con vino, musica e giochi, mentre il coperchio raffigura il famoso tuffo del giovane, simbolo del passaggio dalla vita alla morte e della conoscenza ultraterrena.</p>
+<p>•	Corredo: includeva una lekythos attica per oli profumati e una lyra realizzata con guscio di tartaruga, ferro e avorio, simile a quella raffigurata sulle pareti della tomba.</p>
+<p>La Tomba del Tuffatore rappresenta un simbolo della cultura e della spiritualità dell’antica Paestum, con significati rituali e misterici unici.</p>
+        </div>
+    </div>
+</div>
+         
+<!-- ================= STORIA E IMMAGINE 2================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Simbolismo del tuffo
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Simbolismo.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            
+            <p>Il giovane che si tuffa non rappresenta solo il passaggio dalla vita alla morte, ma potrebbe essere collegato a culti iniziatici misterici legati a Dioniso o a riti di rinascita. Alcuni studiosi suggeriscono che il tuffo simboleggi la “discesa” in un mondo ultraterreno e contemporaneamente l’ascesa verso una nuova forma di conoscenza spirituale.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 3================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+      Tecnica pittorica e conservazione
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Intonaco.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+
+            <p>La Tomba del Tuffatore utilizza una tecnica mista: l’intonaco sulle pareti interne era steso in più strati e le pitture sono realizzate con pigmenti naturali che hanno resistito quasi 2500 anni. La sorprendente conservazione dei colori permette ancora oggi di vedere vividamente il blu del cielo e i dettagli delle figure, cosa rara per epoca greca.</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 4================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Influenza sulle tombe successive
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Simposio.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>La Tomba del Tuffatore ha influenzato altre tombe lucane, soprattutto nella decorazione interna. Anche se nessuna è identica, elementi come il simposio e il tema della vita e della morte ricorrono in altre tombe dipinte della stessa epoca.</p>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 5================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Studi moderni e restauri
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Restauro.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            
+<p>Grazie a restauri recenti, sono stati recuperati dettagli minimi come piccoli strumenti musicali sulle pareti o motivi decorativi sulle stoffe delle figure. Questi dettagli aiutano gli archeologi a capire meglio la vita quotidiana e le credenze della Paestum greca.</p>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Museo.html">Museo</a>
+    <a href="Tuffatore.html" class="active">Tuffatore</a>
+    <a href="SitodiHera.html">Hera</a>
+    <a href="Fondatore.html">Fondatore</a>
+
+ 
+</nav>
+
+<div class="top-container">
+
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate -  IV E
+</footer>
+
+</body>
+</html>

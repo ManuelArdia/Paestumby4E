@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>La Tomba del Tuffatore – Paestum | Liceo Scientifico Scienze Applicate 4E</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #005F8C, #0082B3);
+            padding: 35px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        /* ==================== HERO BAR ==================== */
+        .hero {
+            background: linear-gradient(90deg, #0082B3, #005F8C);
+            padding: 25px 25px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            margin: 25px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .hero-icon {
+            font-size: 2em;
+        }
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #0077AA;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+        }
+
+        nav a:hover {
+            background: #005F8C;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #004D73;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== SEZIONI ==================== */
+        .section-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 3px solid #0077AA;
+            box-shadow: 0 0 12px rgba(0,0,0,.15);
+            text-align: center;
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .section-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px rgba(0,0,0,.25);
+        }
+
+        .section-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            font-family: 'Montserrat', sans-serif;
+            color: #004D73;
+        }
+
+        .section-card p {
+            font-size: 1em;
+            color: #00344d;
+        }
+
+        .section-card a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #0077AA;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background .25s, transform .25s;
+        }
+
+        .section-card a:hover {
+            background: #005F8C;
+            transform: scale(1.08);
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: #004D73;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* ==================== GRIGLIA IMMAGINI 2x2 ==================== */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+            grid-gap: 20px; /* spazio tra le immagini */
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid #0077AA;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>La Tomba del Fondatore</h1>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">⚱️</span>
+     “Il sacello che custodisce il corredo del fondatore di Poseidonia e celebra le origini della città” 
+</div>
+
+<!-- ================= STORIA E IMMAGINE================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Il fondatore di Poseidonia e il suo monumento
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Fondatore1.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            
+            <p>Negli scavi di Paestum non ci sono solo i celebri templi greci: si trovano anche case, anfiteatri, templi romani e altre strutture che offrono importanti informazioni sulla storia della città. Tra queste spicca l’heroon, un cenotafio eretto in onore dell’eroe fondatore di Poseidonia, un Acheo proveniente dalla colonia greca di Sibari, in Calabria, che fondò la città intorno al 600 a.C., dedicata al Dio del mare.</p>
+            <p>Il monumento, scoperto da Sestieri nel 1954, conteneva al suo interno alcune idrie e un’anfora, tutti vasi di bronzo o terracotta decorati, che conservavano del miele. Oggi questi reperti sono custoditi nel Museo Archeologico di Paestum. L’heroon presenta un doppio tetto: quello originale greco in calcare e un tetto successivo in tegole costruito dai Romani, che scelsero di rispettare il monumento invece di distruggerlo, mostrando la convivenza delle culture greca e romana.</p>
+
+
+        </div>
+    </div>
+</div>
+         
+<!-- ================= STORIA E IMMAGINE 2================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Il sacello ipogeico e il corredo funerario
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Eracle.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            
+            <p>Il sacello, o “sacello ipogeico”, scoperto nel luglio del 1954, era rimasto intatto per circa 2500 anni, sigillato da uno strato di travertino naturale. Durante lo scavo furono rinvenuti numerosi oggetti rituali, tra cui coppe, lekythoi e altri vasi, utilizzati per libagioni e offerte votive. Questi oggetti testimoniano un culto funerario in onore dell’eroe fondatore, probabilmente identificabile con Megyllos o Megyllis, e la pratica di riti legati all’oltretomba.</p>
+           <p>Il sacello, o “sacello ipogeico”, scoperto nel luglio del 1954, era rimasto intatto per circa 2500 anni, sigillato da uno strato di travertino naturale. Durante lo scavo furono rinvenuti numerosi oggetti rituali, tra cui coppe, lekythoi e altri vasi, utilizzati per libagioni e offerte votive. Questi oggetti testimoniano un culto funerario in onore dell’eroe fondatore, probabilmente identificabile con Megyllos o Megyllis, e la pratica di riti legati all’oltretomba.</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 3================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+      Continuità del culto e memoria storica
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Poseidonia.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+
+            <p>Nonostante l’arrivo dei Lucani e la successiva romanizzazione, il culto dell’eroe fondatore sopravvisse e rappresentava un importante simbolo della memoria e dell’identità greca della città. Testimonianze letterarie riferiscono che nel IV secolo a.C. si celebrava ancora una festa durante la quale i discendenti degli abitanti originari di Poseidonia si riunivano per commemorare le origini della città, probabilmente presso il monumento dell’eroe fondatore.</p>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Museo.html">Museo</a>
+    <a href="Tuffatore.html">Tuffatore</a>
+    <a href="SitodiHera.html">Hera</a>
+    <a href="Fondatore.html" class="active">Fondatore</a>
+
+ 
+</nav>
+
+<div class="top-container">
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate -  IV E
+</footer>
+
+</body>
+</html>
