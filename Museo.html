@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Museo – Paestum | Liceo Scientifico Scienze Applicate 4E</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #e6f3fb;
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+        }
+
+        /* ==================== HEADER ==================== */
+        header {
+            background: linear-gradient(45deg, #005F8C, #0082B3);
+            padding: 35px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        /* ==================== HERO BAR ==================== */
+        .hero {
+            background: linear-gradient(90deg, #0082B3, #005F8C);
+            padding: 25px 25px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            margin: 25px auto;
+            max-width: 1200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            color: white;
+        }
+
+        .hero-icon {
+            font-size: 2em;
+        }
+
+        /* ==================== NAVBAR ==================== */
+        nav {
+            background: #0077AA;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 7px 14px;
+            text-decoration: none;
+            font-weight: 600;
+            color: white;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
+        }
+
+        nav a:hover {
+            background: #005F8C;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.25);
+        }
+
+        nav a.active {
+            background: #004D73;
+            transform: scale(1.12);
+            box-shadow: 0 0 6px rgba(0,0,0,.3);
+        }
+
+        /* ==================== SEZIONI ==================== */
+        .section-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .section-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border: 3px solid #0077AA;
+            box-shadow: 0 0 12px rgba(0,0,0,.15);
+            text-align: center;
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .section-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 20px rgba(0,0,0,.25);
+        }
+
+        .section-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            font-family: 'Montserrat', sans-serif;
+            color: #004D73;
+        }
+
+        .section-card p {
+            font-size: 1em;
+            color: #00344d;
+        }
+
+        .section-card a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #0077AA;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background .25s, transform .25s;
+        }
+
+        .section-card a:hover {
+            background: #005F8C;
+            transform: scale(1.08);
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            background: #004D73;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        /* ==================== GRIGLIA IMMAGINI 2x2 ==================== */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 4px solid #0077AA;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Museo archeologico nazionale di Paestum</h1>
+</header>
+
+<div class="hero">
+    <span class="hero-icon">⚱️</span>
+Custode della storia e dei tesori di Poseidonia 
+</div>
+
+<!-- ================= STORIA E IMMAGINE================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Il museo di Paestum
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Museo.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>Il Museo Archeologico Nazionale di Paestum, situato nel cuore dell’antica Poseidonia, custodisce dal 1952 una delle più importanti collezioni archeologiche d’Italia. Dal 2023 il museo presenta un allestimento completamente rinnovato, con spazi accessibili, contenuti multimediali e laboratori didattici per un’esperienza di visita diversificata.</p>
+            <p>Le collezioni raccontano oltre 40.000 anni di storia del territorio, dalla Preistoria alla scoperta del sito nel Settecento, includendo reperti greco-lucani, romani e medievali. Tra le opere più celebri ci sono le metope del santuario di Hera, la Tomba del Tuffatore, le lastre dipinte delle tombe lucane e la statua in bronzo del sileno Marsia.</p>
+            <p>Il museo non è solo espositivo: ospita laboratori, biblioteca e sala studio, dove il personale scientifico cura ricerca, restauro e valorizzazione dei reperti. È anche un luogo di incontro culturale, con mostre, conferenze, eventi e attività didattiche.</p>
+            <p>L’edificio, progettato negli anni ’30 dall’architetto Marcello De Vita, è di impronta razionalista e ha subito diversi ampliamenti per accogliere nuove scoperte, tra cui le sale per la Tomba del Tuffatore e i reperti romani. Gli ultimi interventi, realizzati tra il 2019 e il 2023, hanno aggiornato struttura e allestimento, rendendo il museo più funzionale e accessibile.</p>
+        </div>
+    </div>
+</div>
+         
+<!-- ================= STORIA E IMMAGINE 2================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Il percorso di visita
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+           <p>Il nuovo percorso espositivo del museo racconta la storia di Poseidonia-Paestum e del territorio circostante dal Paleolitico a oggi, attraverso reperti originali, apparati didattici e contenuti multimediali accessibili e interattivi. L’allestimento segue idealmente la sequenza stratigrafica di uno scavo archeologico, dal più antico al più recente.</p>
+           <p>Piano seminterrato: Sezione Preistoria e Protostoria, sulle prime fasi di frequentazione del territorio, e Sezione Oltre il museo, con accesso ai depositi dei reperti guidati dal personale.</p>
+           <p>Piano terra e primo piano: Sezione La città greco-lucana, dedicata alla storia di Poseidonia in età greca e lucana.</p>
+           <p>Secondo piano: Sezione Paestum: dalla città romana a oggi, che illustra le trasformazioni della città dall’epoca romana al periodo moderno, inclusa la riscoperta settecentesca e le indagini archeologiche più recenti.</p>
+           <p>Piano terra: spazio per piccole mostre temporanee e presentazione delle ultime ricerche archeologiche.</p>
+        </div>
+    </div>
+
+    <!-- ======== GRIGLIA IMMAGINI 2x2 DEL PERCORSO ======== -->
+    <div class="image-grid">
+        <img src="PS.jpg" alt="Immagine PS">
+        <img src="PT.jpg" alt="Immagine PT">
+        <img src="PP.jpg" alt="Immagine PP">
+        <img src="SP.jpg" alt="Immagine SP">
+    </div>
+
+</div>
+
+<!-- ================= STORIA E IMMAGINE 3================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+      Preistoria e Protostoria
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Preistoria e Protostoria.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>La Sezione “Preistoria e Protostoria”, dedicata all’archeologo Gianni Bailo Modesti, ricostruisce la lunga storia del territorio di Paestum prima della fondazione della città greca. Il percorso copre un arco di oltre 40.000 anni, dal Paleolitico al 600 a.C., mostrando l’evoluzione delle comunità umane, delle tecniche artigianali e dei rituali funerari.</p><p>La prima sala è dedicata alla Cultura del Gaudo (3500–2500 a.C.), rappresentata da grandi tombe collettive scavate nella roccia e da ricchi corredi con armi in selce o rame, ceramiche e le tipiche pissidi dai coperchi decorati.</p><p>Segue un corridoio che illustra lo sviluppo del popolamento locale attraverso Paleolitico, Neolitico, età dei Metalli e Ferro, fino alla nascita di Poseidonia. Tra i reperti più significativi spicca la “Venere neolitica”, una statuetta femminile legata ai culti della fertilità.</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       La città greco-lucana
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="La citta greco-lucana.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>La sezione “La città greco-lucana” (600–273 a.C.), la più estesa del museo, ripercorre la storia di Poseidonia dalla fondazione greca alla conquista lucana e fino alla colonia latina. Attraverso sale tematiche, permette di rivivere spazi e funzioni dell’antica città.</p><p>La sala “I santuari – Architettura” illustra lo sviluppo dell’architettura templare e dell’ordine dorico, con elementi provenienti dai santuari urbani e dal santuario di Hera sul Sele. Una vetrina storica espone raffinati vasi a figure rosse greci e locali.</p><p>La sala “I santuari – Culti” presenta rituali, doni votivi e oggetti sacri legati ai culti di divinità come Hera e Athena. Tra le novità spicca una preziosa testa barbata in bronzo rinvenuta nel Sele.</p>
+<p>
+La sala “Cella” racconta la storia del museo ed espone le lastre di una tomba lucana recuperate nel 2022, oltre al celebre ciclo di metope arcaiche del santuario di Hera, visibili da entrambi i piani.</p><p>La grande sala “Lo spazio pubblico” ricrea l’atmosfera dell’antica agorà, ospitando ricostruzioni di edifici come l’heroon del fondatore e l’ekklesiasterion, oltre a un’area dedicata alla produzione di monete.</p>
+
+
+
+
+
+
+
+
+<p>Un’intera sala è dedicata alla Tomba del Tuffatore (470 a.C.), con le sue iconiche lastre dipinte e l’installazione moderna di Carlo Alfano che dialoga con il monumento.</p>
+
+<p>La sezione include anche sale in aggiornamento dedicate alle necropoli, al territorio e alle tombe dipinte, con ricostruzioni di ambienti funerari e corredi che documentano il passaggio dalla fase greca alla dominazione lucana.</p>
+ 
+     
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 5================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Paestum: dalla città romana a oggi
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Dalla citta romana a oggi.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>La sezione “Paestum: dalla città romana a oggi” (secondo piano) ripercorre la storia della città dalla deduzione della colonia latina nel 273 a.C. fino all’età moderna. Il percorso espone sculture, epigrafi, monete e oggetti della vita quotidiana, illustrando la religione, gli spazi pubblici e privati, i riti funerari e l’evoluzione della società romana e post-romana. Tra le opere più importanti spicca la statua in bronzo del sileno Marsia, rinvenuta nel Foro della città.</p>
+<p>Il nuovo allestimento presenta anche reperti inediti, provenienti da scavi recenti o selezionati dai depositi del museo. La parte finale della sezione è dedicata alla riscoperta di Paestum nel Settecento, con incisioni dei Piranesi e vedute realizzate da artisti del Grand Tour. Documenti e fotografie raccontano infine l’avvio delle moderne ricerche archeologiche del Novecento, che continuano ancora oggi nella valorizzazione del sito.</p>
+
+
+ 
+     
+        </div>
+    </div>
+</div>
+
+
+<!-- ================= STORIA E IMMAGINE 6================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Oltre il museo e depositi
+    </h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
+        <img src="Oltre il museo.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
+            <p>La sezione “Oltre il museo” (piano seminterrato) permette di visitare i depositi archeologici del museo, un’area di 1350 m² che conserva milioni di reperti provenienti da scavi, scoperte fortuite e sequestri. Dal 2018 questi spazi, un tempo riservati agli specialisti, sono aperti al pubblico tramite visite guidate tematiche.</p>
+
+<p>Il percorso mostra non solo gli oggetti custoditi, ma anche il lavoro quotidiano di archeologi, restauratori e tecnici che si occupano della tutela del patrimonio.</p>
+<p>La visita inizia con la “Tomba del sequestro della Finanza”, una tomba a camera del III secolo a.C., recuperata nel 1976 dalla Guardia di Finanza e ricomposta nel museo. Le pitture raffigurano il defunto accolto nell’aldilà da un antenato, accompagnato da un corteo figurato.</p><p>Si prosegue poi nei depositi delle tombe dipinte lucane, che conservano centinaia di lastre decorate con motivi vegetali, scene figurate e ornamenti realizzati per i rituali funerari dell’aristocrazia lucana. Queste opere, scoperte dal XIX secolo fino a oggi, rappresentano uno dei nuclei identitari più importanti del museo.</p>
+
+        </div>
+    </div>
+</div>
+
+<!-- ================= STORIA E IMMAGINE 7================== -->
+<div class="section-container">
+    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
+       Galleria
+    </h2>
+
+    <!-- ======== GRIGLIA IMMAGINI 2x2 DEL PERCORSO ======== -->
+    <div class="image-grid">
+        <img src="Locandina.jpg" alt="Immagine PS">
+        <img src="Heroon.jpg" alt="Immagine PT">
+        <img src="Armi in bronzo.jpg" alt="Immagine PP">
+<img src="Sala cella.jpg" alt="Immagine SP">
+</div>
+    <div class="image-grid">
+        <img src="Testa in bronzo.jpg" alt="Immagine PS">
+        <img src="Offerte votive.jpg" alt="Immagine PT">
+<img src="Depositi del museo.jpg" alt="Immagine PP">
+       <img src="Tesoretto di monete.jpg" alt="Immagine SP">
+</div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Museo.html" class="active">Museo</a>
+    <a href="Tuffatore.html">Tuffatore</a>
+    <a href="SitodiHera.html">Hera</a>
+    <a href="Fondatore.html">Fondatore</a>
+</nav>
+
+<div class="top-container">
+
+<footer>
+    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate -  IV E
+</footer>
+
+</body>
+</html>
