@@ -1,233 +1,177 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Home – Paestum | Liceo Scientifico Scienze Applicate 4E</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
+<title>Romantic Poetry Project</title>
 
-        body {
-            margin: 0;
-            background: #e6f3fb;
-            font-family: 'Open Sans', sans-serif;
-            color: #333;
-        }
+<link rel="stylesheet" href="style.css">
 
-        /* ==================== HEADER ==================== */
-        header {
-            background: linear-gradient(45deg, #005F8C, #0082B3);
-            padding: 35px;
-            text-align: center;
-            color: white;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.8em;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-
-        header p {
-            margin-top: 8px;
-            font-size: 1.3em;
-            opacity: 0.95;
-        }
-
-        /* ==================== HERO BAR ==================== */
-        .hero {
-            background: linear-gradient(90deg, #0082B3, #005F8C);
-            padding: 25px 25px;
-            text-align: center;
-            font-size: 1.3em;
-            font-weight: 600;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-            margin: 25px auto;
-            max-width: 1200px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            color: white;
-        }
-
-        .hero-icon {
-            font-size: 2em;
-        }
-
-        /* ==================== NAVBAR ==================== */
-        nav {
-            background: #0077AA;
-            padding: 12px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 10px;
-            padding: 7px 14px;
-            text-decoration: none;
-            font-weight: 600;
-            color: white;
-            border-radius: 5px;
-            display: inline-block;
-            transition: transform 0.2s ease, background 0.25s, box-shadow 0.25s;
-        }
-
-        nav a:hover {
-            background: #005F8C;
-            transform: scale(1.12);
-            box-shadow: 0 0 6px rgba(0,0,0,.25);
-        }
-
-        nav a.active {
-            background: #004D73;
-            transform: scale(1.12);
-            box-shadow: 0 0 6px rgba(0,0,0,.3);
-        }
-
-        /* ==================== SEZIONI ==================== */
-        .section-container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 15px;
-        }
-
-        .sections-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-
-        .section-card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            border: 3px solid #0077AA;
-            box-shadow: 0 0 12px rgba(0,0,0,.15);
-            text-align: center;
-            transition: transform .25s, box-shadow .25s;
-        }
-
-        .section-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 20px rgba(0,0,0,.25);
-        }
-
-        .section-card h3 {
-            margin-bottom: 10px;
-            font-size: 1.4em;
-            font-family: 'Montserrat', sans-serif;
-            color: #004D73;
-        }
-
-        .section-card p {
-            font-size: 1em;
-            color: #00344d;
-        }
-
-        .section-card a {
-            display: inline-block;
-            margin-top: 15px;
-            background: #0077AA;
-            color: white;
-            padding: 8px 16px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background .25s, transform .25s;
-        }
-
-        .section-card a:hover {
-            background: #005F8C;
-            transform: scale(1.08);
-        }
-
-        /* ==================== FOOTER ==================== */
-        footer {
-            background: #004D73;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-        }
-
-    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>STORIA DELL'ARTE</h1>
-    <p>PAESTUM</p>
+
+<h1>English Romantic Poetry</h1>
+
+<p>A class project inspired by Wordsworth, Coleridge and Blake</p>
+
+<div class="nav-buttons">
+
+<a href="#wordsworth">Wordsworth</a>
+<a href="#coleridge">Coleridge</a>
+<a href="#blake">Blake</a>
+
+</div>
+
 </header>
 
-<div class="hero">
-    <span class="hero-icon">🏛️</span>
-    Templi, storia, archeologia, arte, Magna Grecia
-</div>
+
+<section class="intro">
+
+<h2>The Project</h2>
+
+<p>
+Our class explored English Romanticism through three great poets.
+Each group created an original poem inspired by their themes,
+style and imagination.
+</p>
+
+</section>
 
 
+<section id="wordsworth" class="poet-section">
 
-<!-- ================= STORIA E IMMAGINE================== -->
-<div class="section-container">
-    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
-        Paestum: Storia e Tesori
-    </h2>
-    <div style="display:flex; flex-wrap:wrap; gap:25px; align-items:center; justify-content:center; margin-top:20px;">
-        <img src="paestum.jpg" alt="Veduta dei templi di Paestum" class="paestum-img" style="max-width:500px; width:100%; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.2);">
-        <div style="max-width:600px; font-size:1.1em; color:#00344d; line-height:1.6;">
-            <p>Fondata dai Greci intorno al 600 a.C. con il nome di Poseidonia, Paestum è celebre per i suoi straordinari templi dorici perfettamente conservati. Passeggiando tra le rovine, si possono ammirare il Tempio di Hera, il Tempio di Nettuno e il Tempio di Atena, veri capolavori dell’architettura greca.</p>
-            <p>La città visse secoli di prosperità, diventando un importante centro commerciale e culturale, fino alla conquista romana. Oggi Paestum non è solo un sito archeologico: è un viaggio nella storia, nella mitologia e nell’arte dell’antica Grecia in Italia.</p>
-        </div>
-    </div>
-</div>
+<img class="poet-image" src="Word.jpg">
 
+<h2 class="poet-name">William Wordsworth</h2>
 
+<p class="poet-description">
+Inspired by nature, emotion and the beauty of the natural world.
+</p>
 
-<!-- ==================== MAIN SECTIONS ==================== -->
-<div class="section-container">
-    <h2 style="text-align:center; font-family:Montserrat; font-size:2em; color:#004D73;">
-        Argomenti
-    </h2>
+<h3 class="poem-title">I Wandered at Morning</h3>
 
-    <div class="sections-grid">
+<p class="poem">
+I wandered slowly through the morning fields,
+where tender grasses bent beneath the breeze
+and a quiet stream, with silver voice,
+spoke softly to the listening stones.
 
-        <div class="section-card">
-            <h3>Museo</h3>
-            <p>Reperti archeologici e mosaici dell’antica Paestum.</p>
-            <a href="Museo.html">Vai →</a>
-        </div>
-        <div class="section-card">
-            <h3>Tomba del Tuffatore</h3>
-            <p>Un capolavoro unico di pittura funeraria greca.</p>
-            <a href="Tuffatore.html">Vai →</a>
-        </div>
+The sky unfolded pale and wide above,
+its early light upon the distant hills
+falling gentle as a thoughtful hand
+upon the waiting earth.
 
-        <div class="section-card">
-            <h3>Sito di Hera Argiva</h3>
-            <p>Il maestoso Tempio di Hera, simbolo della città.</p>
-            <a href="SitodiHera.html">Vai →</a>
-        </div>
+No human sound disturbed that sacred hour—
+only the lark that rose in singing flight
+and leaves that whispered to the patient wind.
 
-        <div class="section-card">
-            <h3>Tomba del Fondatore</h3>
-            <p>Leggende e misteri dei primi abitanti di Paestum.</p>
-            <a href="Fondatore.html">Vai →</a>
-        </div>
+And there my restless heart grew calm again,
+as if the soul, long troubled by the world,
+had found in Nature’s silent company
+a truth more simple than all human thought
+
+</p>
+
+<p class="group"><b>Written by</b> Gaeta Gennaro, Nunziante Vito, Castagna Cosimo, Materazzo Emanuele, Voza Raffaele</p>
+
+</section>
 
 
-    </div>
-</div>
+<section id="coleridge" class="poet-section">
+
+<img class="poet-image" src="Coleridge.jpg">
+
+<h2 class="poet-name">Samuel Taylor Coleridge</h2>
+
+<p class="poet-description">
+Inspired by mystery, imagination and the supernatural.
+</p>
+
+<h3 class="poem-title">The whispering mere</h3>
+
+<p class="poem">
+
+Beneath the moon I stood in the old wood,
+Where branches bent and swayed like gentle men;
+A soft wind moved through shadows as it could,
+And whispered things I could not hear again.
+The lake lay quiet, dark, and deep as sleep.
+
+A silver mist spread slowly on the shore,
+As if the earth had dreams it could not share;
+The reeds bent low, and owls cried out once more,
+While silence hung and trembled in the air.
+The night seemed full of watching everywhere.
+
+Then a pale shape moved softly by the lake,
+It looked at me, then vanished in the gloom;
+The air felt strange, as if it too might wake,
+And leave a quiet magic in the room,
+That stayed with me beneath the silver moon.
+
+</p>
+
+<p class="group"><b>Written by</b> Ardia Manuel, Macellaro Gianmarco, Colangelo Pasquale, Mabo Temidayo, Gorrasi Crescenzo</p>
+
+</section>
+
+
+<section id="blake" class="poet-section">
+
+<img class="poet-image" src="Blake.jpg">
+
+<h2 class="poet-name">William Blake</h2>
+
+<p class="poet-description">
+Inspired by vision, symbolism and the contrast between innocence and experience.
+</p>
+
+<h3 class="poem-title">Cotton' Bunny</h3>
+
+<p class="poem">
+
+Machines and cotton’s flays
+More in all the coming days!
+Bunny, bunny,
+How’ll you play?
+Mommy spun all the wool,
+Though, you hardly reach the stool.
+
+Dear bunny, dear bunny
+Don't you find it funny?
+You’re jumping and laughing,
+While the owner is charming.
+Giving orders, not much food
+Mommy is in a bad mood.
+
+Bunny! Bunny!
+Remember when the days were Sunny?
+Gray and brown, all you see
+How frightened are thee?
+The owner’s finances has grown
+While you can’t ever seen the dawn.
+</p>
+
+<p class="group"><b>Written by</b> Masi Alessia, Di Fiore Federica, Rossomando Antonio, Salzano Fiorentino, Giannone Alessia</p>
+
+</section>
+
 
 <footer>
-    © 2025 IIS “IPSAR Piranesi” – Liceo Scientifico Scienze Applicate -  IV E
+
+<p>Romantic Poetry Project • 2026 •
+ Created by the <b>students of Class 4E</b> under the guidance of Professor <b>Simona Sica</b></p>
+
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
-
-
